@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DCKAP Create Account </title>
+    <link rel="stylesheet" href="createAccountDemo.css"> <!-- Link tag defines "webDemo.css" as a stylesheet -->
+    <script defer src="createAccountDemo.js"></script> <!-- Script tag allows a js file to be linked -->
+</head>
+
+<body>
+    <div class="center"> <!-- Div tag defines a division/section, used as a container for html elements - easily styled by using the "class" or "id" attribute -->
+        <h1> Create Account </h1>
+        <form name="form" method="post"> <!-- Form tag is used to collect user input, method attribute specifies how to send form-data -->
+            <div class="txt_field"> <!-- "txt_field" class is used to style the text field in webDemo style sheet -->
+                <input type="text" name="firstName" placeholder="First Name"> <!-- Input tag specified for a text element to display -->
+            </div>
+
+            <div id="first_blank_error"> First Name is Required</div> <!-- This is an error message that displays when validation is not met -->
+            <div id="first_num_error"> Please Use Alphabet Characters Only </div>
+
+            <div class="txt_field">
+                <input type="text" name="lastName" placeholder="Last Name">
+            </div>
+
+            <div id="last_blank_error" > Last Name is Required  </div>  
+            <div id="last_num_error"> Please Use Alphabet Characters Only </div> 
+
+            <div class="txt_field">
+                <input type="text" name="email" placeholder="Email">
+            </div>            
+
+            <div id="email_blank_error" > Email is Required  </div>  
+            <div id="email_format_error"> A Valid Email Format is Required</div>
+
+            <div class="txt_field">
+                <input type="password" name="password" placeholder="Password"> <!-- Input tag specified for a password element to display -->
+            </div>
+
+            <div id="pass_blank_error"> Password is Required </div>
+            <div id="pass_num_error" > Password Requires at Least One Number  </div>  
+            <div id="pass_upper_error"> Password Requires at Least One Upper Case Letter </div>
+            <div id="pass_lower_error"> Password Requires at Least One Lower Case Letter </div>
+            <div id="pass_length_error"> Password Must be at least 8 Characters Long </div>
+
+            <div class="txt_field">
+                <input type="password" name="passConfirm" placeholder="Confirm Password">
+            </div>
+
+            <div id="passConfirm_blank" > Password Confirmation is Required  </div>  
+            <div id="passConfirm_error" > Confirmation Does Not Match Password  </div> 
+
+            <div class="txt_field">
+                <input type="text" name="phone" placeholder="Phone Number">
+            </div>
+
+            <div id="phone_blank_error" > Phone Number is Required  </div> 
+            <div id="phone_num_error"> Phone Number Must Contain Numbers Only </div>
+            <div id="phone_length_error"> Phone Number Must be 10-12 Numbers Long </div>
+
+            <div class="txt_field"> 
+                <input type="date"> <!-- Input tag creates a field element that displays a date -->          
+            </div>
+            <button id="button" type="submit"> Join Now! </button> <!-- Input tag renders a button element - when click event occurs, the user agent attempts to submit the form to the server -->
+        </form>
+    </div>
+</body>
+</html>
